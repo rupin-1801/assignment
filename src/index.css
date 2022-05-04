@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+form{
+  min-width: 320px;
+  width: 40%;
+  min-height: 50%;
+  height: 50vh;
+  max-height: 70%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form>div{
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+  align-items: center;
+  min-width: 250px;
+}
+form>h2{
+  color: blue;
+}
+form>div>label{
+  font-size: 18px;
+  text-align: left;
+  max-width: 100px;
+}
+form>h4{
+  width: 100%;
+  text-align: right;
+  color: blue;
+  cursor: pointer;
+  margin-right: 15%;
+}
+input{
+  width: 150px;
+  height: 30px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+button{
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+  padding: 7px 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.container{
+  width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.container > b{
+  display: inline;
+}
+.container > p{
+  display: inline;
+  text-align: justify;
+  margin-top: 0px;
+}
+.listhead{
+  position: absolute;
+  top : 80px;
+  left: 50px;
+}
+.container:hover{
+  max-height: fit-content;
+}
+
+.nav{
+  position: fixed;
+  box-sizing: border-box;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+}
+
+.nav button{
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.cards{
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  flex-wrap: wrap;
+  padding: 0px 40px;
+  display: inline-flex;
+  width: 100vw;
+}
